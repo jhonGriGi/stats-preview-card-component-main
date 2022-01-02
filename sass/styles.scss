@@ -1,3 +1,5 @@
-body {
-    border: 1px solid;
-}
+@import "variables";
+@import "generics";
+@import "header";
+@import "section";
+@import "footer";

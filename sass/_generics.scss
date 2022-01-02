@@ -1,0 +1,50 @@
+/** @format */
+
+// breakpoints: 764px 894px 1160px
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--VeryDarkBlue);
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+main {
+  background: var(--DarkDesaturatedBlue);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 2.5em auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        max-width: 480px;
+    }
+}
+
+@media screen and (min-width: 1160px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 1000px;
+        margin: 150px auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        max-width: 1200px;
+        margin: 150px auto;
+    }
+}
